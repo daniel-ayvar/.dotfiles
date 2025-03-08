@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -10,8 +8,20 @@ return {
     -- overrides `require("mason-lspconfig").setup(...)`
     opts = {
       ensure_installed = {
-        "lua_ls",
-        -- add more arguments for adding more language servers
+        -- Progamming Languages
+        "bashls", -- bash
+        "eslint", -- javascript
+        "gopls", -- golang
+        "rust_analyzer", -- rust
+        "ts_ls", -- typscript
+        "lua_ls", -- lua
+
+        -- Other
+        "cssls", -- css
+        "html", -- html
+        "jsonls", -- json
+        "marksman", -- markdown
+        "yamlls", -- yaml
       },
     },
   },
